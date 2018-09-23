@@ -2,16 +2,20 @@ const express = require("express");
 
 const router = express.Router();
 
+const passport = require("passport");
+
 router.get("/login",(req,res)=>{
     // render login page
+    res.render("login");
 });
 
-router.get("/google-login",(req,res)=>{
-    // have to handle google authentication with passport
-});
+router.get("/google",passport.authenticate("google",{
+    scope:['profile']
+}));
 
-router.get("login",(req,res)=>{
-    // render login page
+router.get("/google/callback",(req,res)=>{
+    // This is url to which user will be redirected after google authentication
+    res.send("This is callback page")
 });
 
 module.exports = router;

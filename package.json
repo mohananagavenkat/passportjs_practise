@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/mohananagavenkat/passportjs_practise/issues"
   },
-  "homepage": "https://github.com/mohananagavenkat/passportjs_practise#readme"
+  "homepage": "https://github.com/mohananagavenkat/passportjs_practise#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  }
 }

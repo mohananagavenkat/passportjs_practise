@@ -8,6 +8,9 @@ const app = express();
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// serving static assets
+app.use(express.static("/assets"));
+
 // Loading Routes
 
 const authRoutes = require("./routes/authRoutes");

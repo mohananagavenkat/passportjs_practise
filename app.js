@@ -2,6 +2,8 @@ const express = require("express");
 
 const exphbs = require("express-handlebars");
 
+const env = require("./.env");
+
 const app = express();
 
 // Adding views engine
@@ -19,8 +21,7 @@ const generalRoutes = require("./routes/generalRoutes");
 app.use(generalRoutes);
 app.use("/auth", authRoutes);
 
-const port = 5002;
 
-app.listen(port,()=>{
-    console.log(`Application is serving on http://localhost:${port}`);
-})
+app.listen(env.port, () => {
+    console.log(`Application is serving on http://localhost:${env.port}`);
+});

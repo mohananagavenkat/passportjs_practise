@@ -4,6 +4,8 @@ const exphbs = require("express-handlebars");
 
 const env = require("./.env");
 
+const passportSetup = require("./config/passportSetup");
+
 const app = express();
 
 // Adding views engine

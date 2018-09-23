@@ -1,0 +1,24 @@
+{
+  "name": "passportjs_practise",
+  "version": "1.0.0",
+  "description": "Working with google OAuth using passport middleware",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohananagavenkat/passportjs_practise.git"
+  },
+  "keywords": [
+    "google",
+    "OAuth",
+    "passport.js"
+  ],
+  "author": "Mohana Naga Venkat <mohananagavenkat@gmail.com> (http://www.smnv.in/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohananagavenkat/passportjs_practise/issues"
+  },
+  "homepage": "https://github.com/mohananagavenkat/passportjs_practise#readme"
+}

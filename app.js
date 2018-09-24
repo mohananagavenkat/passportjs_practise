@@ -6,6 +6,12 @@ const env = require("./.env");
 
 const passportSetup = require("./config/passportSetup");
 
+const mongoose = require("mongoose");
+
+mongoose.connect(env.mongoDB.URL, { useNewUrlParser: true })
+    .then( () => console.log("Connected to Database Successfully") )
+    .catch( err => console.log(err) )
+
 const app = express();
 
 // Adding views engine
